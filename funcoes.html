@@ -1,0 +1,76 @@
+<html>
+	
+	<script>
+		// *** DECLARANDO VARIÁVEL ***
+		x = 1;
+		//x vale 1
+
+		// *** DECLARANDO FUNÇÃO ***
+		function soma() {
+			x = x + 1;
+		}
+
+		//x continua valendo 1
+
+		// *** CHAMANDO FUNÇÃO *** 
+		soma()
+
+		// Foi aplicado a função agora x vale 2
+		x
+		//2
+
+		// Funções são blocos de código que podemos reutilizar
+		soma() //se aplicado mais a função
+		x 		// o valor de x se torna três pois foi somado mais uma vez através da função chamada acima
+
+		// Se chamarmos novamente a função é aplicado mais 1 a variável X e assim sucessivamente
+
+
+
+		// *** FUNÇÕES CRIAM ESCOPO ***
+		function qualquer() {
+			var robson = 'robson';
+		}
+
+		robson // se chamarmos a variável robson fora da função dará erro, pois ela só existe dentro da função
+
+
+
+		// *** FUNÇÕES PODEM RETORNAR VALORES ***
+		function qualquer2() {
+			var robson = 'robson';
+			return robson;
+		}
+
+		robson // se chamarmos a variável robson agora vai dar erro novamente, pois robson não está definido 
+		qualquer2(); // porém se aplicarmos a função será retornado o valor da variável que é a string 'robson' através do return adicionado na função 
+		// 'robson'
+
+
+		// *** OUTRO EXEMPLO COM RETURN ***
+		var y = 3;
+		function cinco() {
+			return 5;
+		}
+		cinco() //chamando a função cinco() será retornado o valor 5 declado
+		y //Se chamar a variável y será retornado seu valor que é 4
+
+		y + cinco(); //Se somarmos y que vale 3 mais a função cinco() que vale 5 o valor será 8 
+
+
+
+		// *** FUNÇÕES PODEM RECEBER ARGUMENTOS (OU PARÂMETROS) 
+		function soma(x,y) {
+			return x+y;
+		}
+		soma() 
+		//NaN 
+		// Retorna Not a Number, pois não foi aplicado nada ainda a função
+		soma(1,2)
+		//3 
+		// Retorna 3 pois foi passado valores x,y para os parametros da função onde retornou a soma declarada no return dentro da função
+
+
+
+	</script>
+</html>
