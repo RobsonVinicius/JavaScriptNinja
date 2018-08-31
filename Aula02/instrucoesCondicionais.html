@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instruções Condicionais</title>
+  </head>
+  <body>
+
+    <script>
+      
+      //|| IF ||\\
+      var x = 3;
+      var y = 7;
+
+      x
+      //3
+      y
+      //7
+
+      if(x === 3) {
+        y = 3;
+      }
+      
+      y
+      //3
+
+      if(x === y && x === 3)  {
+        x = 5;
+        y = 2;
+      }
+
+      x
+      //5
+      y
+      //2
+
+      if(x === 5 || y === 1) {
+        x = 1;
+        y = 1;
+      }
+
+      x
+      //1
+      y 
+      //1
+
+      // if sempre retorna boolean
+      if(x === 2) {
+        x = 5;
+        y = 5;
+      }
+
+      x
+      // 1  continua valendo um porque x não é igual a dois
+       
+      //|| ELSE ||\\ para testar mais de uma coisa
+      if(x === 2) {
+        y = 2;
+      } else {
+        y = 10;
+      }
+
+      y
+      //10
+
+      //|| ELSE IF ||\\ para testar mais de duas coisas
+      if(x === 2) {
+        y = 2;
+      } else if(y === 3) {
+        x = 5;
+      } else if(x === y) {
+        x = 10;
+        y = 100;        
+      } else{
+        x = 0;
+        y = 0;
+      }
+
+      x
+      // 0 
+      y 
+      // 0
+
+    </script>
+    
+  </body>
+</html>
