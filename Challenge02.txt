@@ -26,20 +26,18 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
   function adicionarValor() {
-    minhavar = 'VALOR';
+    minhavar = 27;
+    return 'O valor da variável agora é ' + minhavar;
     }
-		
-?
 
 
 // Invoque a função criada acima.
-  adicionarValor
+  adicionarValor();
 
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* Ele retorna undefined, porém após chamar a variável
-   criada, vemos que foi aplicado o valor, devido a 
-   invocação da função anteriormente.  */
+/* O valor da variável 
+   agora é 27  */
 
 
 /*
