@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tipos</title>
+</head>
+<body>
+  <script>
+
+    //*** Tipos ***//
+
+      /* Tipos Primitivos
+          • number
+          • string
+          • boolean
+          • null e undefined
+      
+         Tipos de objeto
+          • Todos os outros
+
+            objeto 
+            • Conjunto de propriedades
+      */
+    
+    { propriedade: 'valor'}
+
+    var objeto = { propriedade: 'valor', propriedade2: 10, propriedade3: true };
+
+    // Para que usar objetos? Básicamente para ordenar seus dados (código) e esse objeto se referência a objetos da vida real
+
+    objeto
+    /* { propriedade: 'valor',
+         propriedade2: 10,
+         propriedade3: true, }
+    */
+
+    // Para acessar determinado valor no objeto, utilizamos a conotação abaixo:
+    objeto.propriedade
+    // valor
+
+    objeto.propriedade2
+    // 10
+
+    objeto.propriedade3
+    // true
+
+    // No objeto adicionamos propriedades que fazem referência a ele mesmo
+
+    var pessoa = { nome: 'Robson', idade: 30, peso: 85, altura: 1.85 };
+
+    /* pessoa 
+      { nome: 'Robson',
+        idade: 30,
+        peso: 85,
+        altura: 1.85 }
+    */
+
+      pessoa.nome
+      // 'Robson'
+
+      pessoa.idade
+      // 30
+
+      pessoa.peso
+      // 85
+
+      pessoa.altura
+      // 1.85
+
+
+    // Outro exemplo:
+    var carro = { cor: 'prata', motor: '2.0', portas: 4 };
+    
+    carro 
+    /* cor: 'prata',
+       motor: 2.0,
+       portas: 4
+    */
+
+    carro.cor
+    // 'prata'
+
+    carro.motor
+    // '2.0'
+
+    carro.portas
+    // 4
+
+
+    // O objeto também pode receber outro objeto, como por exemplo as funções, que são objetos de primeira classe, pois podem ser atribuídos a variáveis ou a objetos
+
+    var myvar = function() { return 'varíavel myvar'; }
+    myvar
+    // [function]
+
+    myvar()
+    // 'variável myvar'
+
+  </script>
+</body>
+</html>
